@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3302241576235687901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3302241576235687898}
+  - component: {fileID: 3302241576235687897}
+  - component: {fileID: 3302241576235687903}
+  - component: {fileID: 3302241576235687899}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3302241576235687898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3302241576235687901}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3302241576235687897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3302241576235687901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e00f5e61b8c4d2b88da7ccb5c605fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bossLogData: {fileID: 11400000, guid: 0c8b57baa20da4f88a6065942da37e2f, type: 2}
+  _simpleLogData: {fileID: 11400000, guid: 80d1f318ab87445fe8ca95df74e8ef10, type: 2}
+  _countLvL: 5
+  _knifeManager: {fileID: 3302241576235687903}
+  _uiManager: {fileID: 0}
+  _logManager: {fileID: 3302241576235687899}
+  _endWindow: {fileID: 0}
+  _counterKnifesManager: {fileID: 0}
+--- !u!114 &3302241576235687903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3302241576235687901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a3d299f678e543a3b1097efb96de50b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelManager: {fileID: 3302241576235687897}
+  "_\u0441ounterKnifesManager": {fileID: 0}
+  _logManager: {fileID: 3302241576235687899}
+  _topPanel: {fileID: 0}
+  _knifePrefab: {fileID: 2869650696182613835, guid: ae434c781fc414fb184746e0a7a3dcce,
+    type: 3}
+  _knifeForLogPrefab: {fileID: 4625464889297912517, guid: 66123e89b1c98455da414479aef1c423,
+    type: 3}
+  _speedThrowKnife: 0.4
+  _throwDelayTime: 0.2
+--- !u!114 &3302241576235687899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3302241576235687901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d35d50e1fd9449999aede548509b2c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _knifeManager: {fileID: 3302241576235687903}
+  _levelManager: {fileID: 3302241576235687897}
+  _logPrefab: {fileID: 8783257079207298125, guid: 3dbbf59b0358743188ea2bb99f914c7d,
+    type: 3}
+  _semicircleUp: {fileID: 8644749734872434080, guid: 8dabddce808b34da2964792bc7ac8fa4,
+    type: 3}
+  _breakdownKnife: {fileID: 1496023473155956692, guid: 3394d820fb69e479a85d187de2540716,
+    type: 3}
+  _semicircleDown: {fileID: 5849115257984678407, guid: 53a6b6c738ebb45958ddb08574ad7b7d,
+    type: 3}
+  _logMaterial: {fileID: 2100000, guid: a8d0b8d6053434dcdbc68270e90bf8a7, type: 2}
+  _semicircleMaterial: {fileID: 2100000, guid: 9bba084c95ae54ee5b94130918c87d82, type: 2}
